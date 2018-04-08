@@ -1,15 +1,21 @@
+//Juuso Kivisto, 1701442
+//Heimo Kaukonen, 1601560
+
+
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { WelcomePage } from '../pages/welcome/Welcome';
 
-import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = TabsPage;
+  //rootPage:any = TabsPage;
+ rootPage:any = WelcomePage;
+ //rootPage:string = 'tabs-page';
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

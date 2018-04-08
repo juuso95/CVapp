@@ -1,12 +1,19 @@
+//Juuso Kivisto, 1701442
+//Heimo Kaukonen, 1601560
+
 import { Component } from '@angular/core';
+import { IonicPage } from 'ionic-angular';
 
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
+import { IonicPageModule } from "ionic-angular";
 
+@IonicPage()
 @Component({
   templateUrl: 'tabs.html'
 })
+
 export class TabsPage {
 
   tab1Root = HomePage;

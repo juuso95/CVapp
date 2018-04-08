@@ -1,0 +1,60 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>welcome</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content>
+
+-->
+
+<ion-slides pager>
+  <!-- This is first slider -->
+   <ion-slide class="image1">
+   <ion-icon ios="ios-stats" md="md-stats" style="zoom:5.0;"></ion-icon>
+   <h1 style="color: #ebebeb">Looking for advice into your training routine?</h1>
+   <p style="font-family:open-sans; font-size:14px; color:#ebebeb">With our experience we have the latest and <b>most</b> efficient exercises there are!</p>
+   </ion-slide>
+
+
+   <!-- This is second slider -->
+   <ion-slide class="image2">
+    <ion-icon ios="ios-time" md="md-time" style="zoom:5.0;"></ion-icon>
+    <h1 style="color: #ebebeb">Not satisfied with your training methods?</h1>
+    <p style="font-family:open-sans; font-size:14px; color:#ebebeb">Try JH Bodybuilder and find <b>new</b> exercises to boost your training!</p>
+    </ion-slide>
+
+
+    <!-- This is third slider -->
+   <ion-slide class="image3">
+    <ion-icon ios="ios-sync" md="md-sync" style="zoom:5.0;"></ion-icon>
+    <h1 style="color: #ebebeb">Looking for various exercises?</h1>
+    <p style="font-family:open-sans; font-size:14px; color:#ebebeb">Our app provides
+   various traning exercises for <b>you</b>, <i>anytime and anywhere</i>!</p>
+    </ion-slide>
+
+
+    <!-- This is final slider -->
+   <ion-slide class="bg-image">
+    <h1 style="color: #ebebeb">Are you ready?</h1>
+    <h4 style="color: #ebebeb">Click the button down below to get started!</h4>
+    <h2 class="padding" style="font-family:open-sans; font-size:14px; color: #ebebeb"> Have Fun!
+   </h2>
+
+   <div style="position:absolute; bottom: 120px; text-align:center; z-index:1000; width:100%">
+     <button ion-button color="myWhite" round outline [navPush]="firstPage">Lets go!</button>
+   </div>
+    </ion-slide>
+  </ion-slides>

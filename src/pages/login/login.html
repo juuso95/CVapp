@@ -1,0 +1,57 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- This is a logln page of Find Near Me 77-->
+<ion-header>
+  <ion-navbar class="navbar">
+    <ion-title><b>Login</b></ion-title>
+  </ion-navbar>
+</ion-header>
+
+  <ion-content class="bg-image no-scroll" padding>
+  <!--lee Logo of App 77:-->
+  <img src="assets/imgs/logo4.png" class="logo">
+  
+  <!--l77 Username and Password field with proper label 77-->
+
+  <div>
+      <form (ngSubmit)="login()" #registerForm="ngForm">
+          <ion-row>
+            <ion-col>
+  <ion-list class="list" inset>
+  <ion-item class="label">
+  <ion-label color="myWhite" style="font-size:12px" stacked>Username</ion-label>
+  <ion-input type="text" placeholder="Enter Username" [(ngModel)]="registerCredentials.user" required [ngModelOptions]="{standalone:true}"></ion-input>
+  </ion-item>
+  
+  <ion-item class="label">
+  <ion-label color="myWhite" style="font-size:12px" stacked>Password</ion-label>
+  <ion-input color="myWhite" type="password" placeholder="Enter Password" [(ngModel)]="registerCredentials.password" required [ngModelOptions]="{standalone:true}"></ion-input>
+  </ion-item>
+  </ion-list>
+</ion-col>
+</ion-row> 
+    </form>
+  </div>
+  
+  <!--(l Buttons-->
+  <p class="text" style="font-family:open-sans; font-size:14px; color:#ebebeb">Forgot your password?</p>
+  
+  <div text-center>
+  <button class="btnWidth" ion-button color="secondary" round [disabled]="!registerForm.form.valid" (click)="login()">Login</button>
+  </div>
+  
+  <div text-center>
+  <button class="myButton" ion-button color="myWhite" round outline [navPush]="SingupPage">Sign Up</button>
+  
+  </div>
+  
+  <img src="assets/imgs/facebook.png" class="fb-button">
+  
+  
+  <img src="assets/imgs/twitter.png" class="twitter-button">
+  
+  <!--- Make sure to remember that eventually actions will be added, tlltk events etc.-->
