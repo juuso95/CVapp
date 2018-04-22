@@ -5,7 +5,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
 import {AngularFireAuth} from 'angularfire2/auth';
-import { Login } from '../login/login'
+//import { Login } from '../login/login'
 
 /**
  * Generated class for the RegisterPage page.

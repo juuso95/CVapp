@@ -2,22 +2,26 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFireAuthModule} from 'angularfire2/auth';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-import { WelcomePage } from '../pages/welcome/Welcome';
+//import { TabsPage } from '../pages/tabs/tabs';
+import { WelcomePage } from '../pages/welcome/welcome';
 import { Login } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
-import { MenuPage } from '../pages/menu/menu'; 
+//import { MenuPage } from '../pages/menu/menu'; 
+import { GymsPage } from '../pages/gyms/gyms';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { TabsPageModule } from '../pages/tabs/tabs.module';
+import { Camera } from '@ionic-native/camera';
+import { Geolocation } from '@ionic-native/geolocation';
+//import { TabsPageModule } from '../pages/tabs/tabs.module';
 import { LoginModule } from '../pages/login/login.module';
 
 const firebaseAuth ={
@@ -28,6 +32,14 @@ const firebaseAuth ={
   storageBucket: "",
   messagingSenderId: "402198038253"
 };
+var config = {
+  backButtonText: '',
+  backButtonIcon: 'md-arrow-back',
+  iconMode: 'md',
+  pageTransition: 'md',
+  mode:'md',
+  tabsPlacement: 'bottom'
+};
 
 @NgModule({
   declarations: [
@@ -35,15 +47,17 @@ const firebaseAuth ={
     AboutPage,
     ContactPage,
     HomePage,
-    WelcomePage,
     //Login,
-    RegisterPage
+    RegisterPage,
+    WelcomePage,
+    GymsPage,
+    ProfilePage
     
 
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, config),
     AngularFireModule.initializeApp(firebaseAuth),
     AngularFireAuthModule,
     LoginModule
@@ -58,11 +72,15 @@ const firebaseAuth ={
     //TabsPage,
     WelcomePage,
     Login,
-    RegisterPage
+    RegisterPage,
+    GymsPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

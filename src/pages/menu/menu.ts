@@ -37,10 +37,11 @@ rootPage="TabsPage";
   pages: PageInterface[] = [
     { title: 'Home', pageName: 'TabsPage', tabComponent: 'HomePage', index: 0, icon: 'home'},
     { title: 'Muscle Groups', pageName: 'AboutPage', tabComponent: 'AboutPage', index: 1, icon: 'podium'},
-    { title: 'Contact us', pageName: 'ContactPage', index: 2, icon: 'contacts'}//,
-    //{ title: 'Project Work', pageName: 'ProjectworkPage', index: 3, icon: 'folder'},
-    //{ title: 'Targeted CV', pageName: 'TargetedPage', index: 4, icon: 'clipboard'},
+    { title: 'Gyms', pageName: 'GymsPage', index: 2, icon: 'map'},
+    { title: 'Your Profile', pageName: 'ProfilePage', index: 3, icon: 'person'},
+    { title: 'Contact us', pageName: 'ContactPage', index: 4, icon: 'contacts'}//,
     //{ title: 'Curriculum activities', pageName: 'ActivitiesPage', index: 5, icon: 'trophy'}
+    
 
   ]
   

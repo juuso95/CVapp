@@ -7,7 +7,9 @@ import { IonicPage } from 'ionic-angular';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
-import { IonicPageModule } from "ionic-angular";
+import { GymsPage } from '../gyms/gyms';
+import { ProfilePage } from '../profile/profile';
+//import { IonicPageModule } from "ionic-angular";
 
 @IonicPage()
 @Component({
@@ -18,7 +20,9 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tab3Root = GymsPage;
+  tab4Root = ProfilePage;
+  tab5Root = ContactPage;
 
   constructor() {
 

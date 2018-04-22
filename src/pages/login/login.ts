@@ -6,7 +6,7 @@ import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angu
 import { TabsPage } from '../tabs/tabs';
 import { RegisterPage } from '../register/register';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { MenuPage } from '../menu/menu';
+//import { MenuPage } from '../menu/menu';
 
 /**
  * Generated class for the LoginPage page.
