@@ -5,7 +5,7 @@ page-login {
     background-image: url('../assets/imgs/nature.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 100%;
     }
     // Fixing the page with no scroll
     .no-scroll .scroll-content {
@@ -33,7 +33,7 @@ page-login {
    
     .text {
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 26vh;
     }
    
     .btnWidth {

@@ -4,6 +4,7 @@ import { ActionSheetController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import 'intl-tel-input';
 import $ from "jquery"; 
+import { AngularFireAuth } from 'angularfire2/auth';
 
 @IonicPage()
 @Component({
@@ -12,12 +13,13 @@ import $ from "jquery";
 })
 export class ProfilePage {
 public isDisabled:boolean = true;
-img='assets/images/person.png';
+img='assets/images/profile.jpg';
+user: string;
+//firstname: string;
+//lastname: string;
 
-  constructor(public navCtrl: NavController, 
-  public navParams: NavParams,
-  public actionSheetCtrl: ActionSheetController,
-  private camera: Camera) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public actionSheetCtrl: ActionSheetController, private camera: Camera, private fire: AngularFireAuth) {
+    this.user = fire.auth.currentUser.email; 
   }
 
   changeData(input){

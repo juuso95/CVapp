@@ -1,0 +1,58 @@
+page-skills {
+    accordion-list {
+        background: color($colors, light);
+        height: 100%;
+    }
+    .section {
+        //background-image: url('../assets/imgs/logo11.png');
+        background: hsl(0, 2%, 91%);
+        color: #000;
+        //margin-bottom: 4px;
+       
+        
+    }
+    .section-active {
+        background: #0694f3;
+        color: #fff;
+        
+    }
+ 
+    .child {
+        //background: hsl(0, 2%, 91%);
+        background: #fff;
+        color: #000;
+        
+       
+        
+    }
+    .child-item {
+        background: hsl(0, 0%, 100%);
+        //background: #eeece9;
+        padding: 10px;
+        
+        
+        
+    }
+    .label {
+        margin: 0px;
+        
+    }
+    .list {
+        //margin-bottom: 4px;
+        margin: 0px;
+       
+    }
+    .getstart {
+ 
+    
+        background-image: url('../assets/imgs/logo21.jpg');
+        //background-position: 390px;
+        //background-repeat: repeat;
+        //background-size: contain;
+        background-size: 100%;
+        
+    
+    }
+    
+    
+}

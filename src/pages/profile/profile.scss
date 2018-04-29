@@ -1,7 +1,26 @@
 page-profile {
+
+
+    //.iti-flag {background-image: url("assets/images/flags.png");}
+
+    //@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      //.iti-flag {background-image: url("assets/images/flags@2x.png");}
+    //}
+    
     .scroll-content {
         padding: 20px !important;
-        margin-bottom: 0px !important;
+        margin-bottom: 50px !important;
+    }
+    .getstart {
+ 
+    
+        background-image: url('../assets/imgs/logo21.jpg');
+        //background-position: 390px;
+        //background-repeat: repeat;
+        //background-size: contain;
+        background-size: 100%;
+        
+    
     }
    .profile_img{
         position: relative;
@@ -39,7 +58,7 @@ page-profile {
             font-size: 19px;
             font-weight: 500;
             color: color($colors,dark1);
-            width: 140px;
+            width: 300px;
        }
        .button-md{
             width: 33px;
@@ -63,18 +82,40 @@ page-profile {
             }  
         }
    }
+   .one {
+    background: color($colors,light);
+    border-radius: 7px;
+    padding:1px 10px;
+    height: 35px;
+    width: 300px;
+    .text-input-md{
+        width: 100%;
+        font-size: 16px; 
+        
+   }
+}
+.two {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+    color: color($colors,myWhite);
+    margin-bottom: 5px;
+    font-size: 16px;
+    
+}
 
    .profile_form{
        background: color($colors,twitter);
        border-radius: 10px;
        padding: 10px 10px 20px 10px;
-        .item-md{
+       
+        .item-md {
             background: none;
-            .item-inner{
+            .item-inner {
                 padding: 0;
-                .input-wrapper{
+                .input-wrapper {
                 display: block;
-                    .label-md{
+                    .label-md {
                         max-width: 100%;
                         width: 100%;
                         margin-bottom: 0;

@@ -1,0 +1,166 @@
+{
+    "items": [
+        {
+            "name": "Technical Skills",
+            "children": [
+                {
+                    "name": "Developing-Skills",
+                    "children": [
+                        {
+                            "name": "Application developing",
+                            "information": "Experienced with native mobile programming (Java). Decent knowledge about AngularJS, Cordova and Ionic.",
+                            "price": "8.5"
+                        },
+                        {
+                            "name": "Software developing",
+                            "information": "Experienced with GUI desing and developement with HTML/CSS and Java.",
+                            "price": "8.0"
+                         },
+                         {
+                            "name": "Website developing & desing",
+                            "information": "Experienced with HTML website coding. Excellent knowledge about website desing UI/UX.",
+                            "price": "9.1"
+                         }
+                         
+                        ] 
+                    },        
+
+
+
+                {
+                    "name": "Coding Language Skills",
+                    "children": [
+                        {
+                            "name": "Java",
+                            "information": "Able to write clean, maintainable code and read code created by others.",
+                            "price": "8.5"
+                        },
+                        
+                        {
+                            "name": "HTML & CSS",
+                            "information": "Able to write excellent & clean, maintainable code and read code created by others.",
+                            "price": "9.5"
+                         },
+                         {
+                            "name": "JavaScript",
+                            "information": "Able to write clean, maintainable code and read code created by others. Excellent knowledge about the basics.",
+                            "price": "8.0"
+                         }
+                        ] 
+                    }      
+                
+                        ]
+        },
+        {
+            "name": "Soft Skills",
+            "children": [
+                {
+                    "name": "Language Skills",
+                    "children": [
+                        {
+                            "name": "Finnish",
+                            "information": "Native language",
+                            "price": "10.0"
+                        },
+                        {
+                            "name": "English",
+                            "information": "Excellent spoken and written skills",
+                            "price": "9.0"
+                         },
+                         {
+                            "name": "Swedish",
+                            "information": "Moderate spoken and written skills",
+                            "price": "7.0"
+                         }
+                        ] 
+                    },        
+                {
+                    "name": "Teamwork Skills",
+                    "children": [
+                        {
+                            "name": "Able to work effectively with anyone",
+                            "information": "I get along with anyone even though i might not personally like the person i work with.",
+                            "price": "9.0"
+                        },
+                        {
+                            "name": "Motivation to achieve a better team result",
+                            "information": "I'm usually the guy in a team, who works hard to get teamwork going fluently.",
+                            "price": "8.5"
+                         }
+                        ] 
+                    },        
+                           
+                
+                {
+                    "name": "Networking Skills",
+                    "children": [
+                        {
+                            "name": "Friendly",
+                            "information": "Good manners and friendly attitude have helped me to grow my network.",
+                            "price": "9.5"
+                        },
+                        {
+                            "name": "Able to be interesting and interested in business conversations",
+                            "information": "I know how to start a good conversation without having to work really hard for it.",
+                            "price": "8.0"
+                         }
+                        ] 
+                    },        
+                    {
+                    "name": "Influence / Persuasion Skills",
+                    "children": [
+                        {
+                            "name": "Able to influence perspectives",
+                            "information": "I own very strong opinions almost about everything, and i love to detabe. This doesn't mean that i would be always right.",
+                            "price": "10.0"
+                        },
+                        {
+                            "name": "Able to influence decision making",
+                            "information": "I usually want to be sure that the decision is reasonable, and the best option avaible.",
+                            "price": "8.5"
+                         }
+                    ]       
+                }
+            ]
+        },
+        {
+            "name": "Other ICT-Skills",
+            "children": [
+                {
+                    "name": "MS Office programs",
+                    "children": [
+                        {
+                            "name": "Exel",
+                            "information": "Experienced with Exel. Excellent knowledge about the basics.",
+                            "price": "9.0"
+                        },
+                        {
+                            "name": "Word",
+                            "information": "Experienced with Word. Excellent knowledge about every function.",
+                            "price": "10.0"
+                         },
+                         {
+                            "name": "PowerPoint",
+                            "information": "Experienced with PowerPoint. Excellent knowledge about almost every function.",
+                            "price": "9.5"
+                         }
+                        ] 
+                    },               
+                    {
+                    "name": "Email, Internet, etc.",
+                    "children": [
+                        {
+                            "name": "Excellent",
+                            "information": "Every basic skill related to computers are more than familiar for me.",
+                            "price": "10.0"
+                        }
+                        
+                        ] 
+                    }      
+            ]
+        
+            
+            
+        }
+    ]
+}

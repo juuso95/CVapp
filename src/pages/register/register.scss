@@ -6,7 +6,7 @@ page-register {
         background-image: url('../assets/imgs/nature.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: 100%;
         }
         // Fixing the page with no scroll
         .no-scroll .scroll-content {
@@ -42,7 +42,7 @@ page-register {
         }
        
         .myButton {
-        margin-top: 42vh;
+        margin-top: 44vh;
         width: 74%;
      }
     

@@ -5,7 +5,7 @@ import { MyApp } from './app.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
-import { AboutPage } from '../pages/about/about';
+import { SkillsPage } from '../pages/skills/skills';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 //import { TabsPage } from '../pages/tabs/tabs';
@@ -13,8 +13,10 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { Login } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 //import { MenuPage } from '../pages/menu/menu'; 
-import { GymsPage } from '../pages/gyms/gyms';
 import { ProfilePage } from '../pages/profile/profile';
+import { TargetedPage } from '../pages/targeted/targeted';
+import { ActivitiesPage } from '../pages/activities/activities';
+import { ProjectworkPage } from '../pages/projectwork/projectwork';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -23,6 +25,9 @@ import { Camera } from '@ionic-native/camera';
 import { Geolocation } from '@ionic-native/geolocation';
 //import { TabsPageModule } from '../pages/tabs/tabs.module';
 import { LoginModule } from '../pages/login/login.module';
+import { HttpModule } from '@angular/http';
+import { TooltipsModule } from 'ionic-tooltips';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const firebaseAuth ={
   apiKey: "AIzaSyAN8xi0X-fB22RRxmLeivvkRfhfy7N7-0M",
@@ -44,14 +49,16 @@ var config = {
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
+    SkillsPage,
     ContactPage,
     HomePage,
     //Login,
     RegisterPage,
     WelcomePage,
-    GymsPage,
-    ProfilePage
+    ProfilePage,
+    TargetedPage,
+    ActivitiesPage,
+    ProjectworkPage
     
 
   ],
@@ -60,21 +67,26 @@ var config = {
     IonicModule.forRoot(MyApp, config),
     AngularFireModule.initializeApp(firebaseAuth),
     AngularFireAuthModule,
-    LoginModule
+    LoginModule,
+    HttpModule,
+    TooltipsModule,
+    BrowserAnimationsModule
     //TabsPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    SkillsPage,
     ContactPage,
     HomePage,
     //TabsPage,
     WelcomePage,
     Login,
     RegisterPage,
-    GymsPage,
-    ProfilePage
+    ProfilePage,
+    TargetedPage,
+    ActivitiesPage,
+    ProjectworkPage
   ],
   providers: [
     StatusBar,

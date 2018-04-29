@@ -1,14 +1,17 @@
 //Juuso Kivisto, 1701442
-//Heimo Kaukonen, 1601560
+
 
 import { Component } from '@angular/core';
 import { IonicPage } from 'ionic-angular';
 
-import { AboutPage } from '../about/about';
+import { SkillsPage } from '../skills/skills';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
-import { GymsPage } from '../gyms/gyms';
+//import { GymsPage } from '../gyms/gyms';
 import { ProfilePage } from '../profile/profile';
+import { TargetedPage } from '../targeted/targeted';
+import { ProjectworkPage } from '../projectwork/projectwork';
+import { ActivitiesPage } from '../activities/activities';
 //import { IonicPageModule } from "ionic-angular";
 
 @IonicPage()
@@ -18,11 +21,14 @@ import { ProfilePage } from '../profile/profile';
 
 export class TabsPage {
 
+
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = GymsPage;
-  tab4Root = ProfilePage;
-  tab5Root = ContactPage;
+  tab2Root = ProfilePage;
+  tab3Root = TargetedPage;
+  tab4Root = SkillsPage;
+  tab5Root = ProjectworkPage;
+  tab6Root = ActivitiesPage;
+  tab7Root = ContactPage;
 
   constructor() {
 

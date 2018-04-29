@@ -1,21 +1,21 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="bluu">
       <ion-buttons start>
           <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
           </button>
         </ion-buttons>
-    <ion-title>Your Profile</ion-title>
+    <ion-title>Profile</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="getstart" padding>
   <div class="profile_img">
       <img src="{{img}}">
       <span class="upload_img" (click)="getPhoto()"><ion-icon color="secondary" name="ios-camera-outline"></ion-icon></span>
   </div>
   <div class="user_name">
-      <ion-input type="text" value="Mr. You" disabled="{{isDisabled}}"  text-center></ion-input>
+      <ion-input type="text" value="Juuso Kivistö" disabled="{{isDisabled}}"  text-center></ion-input>
       <button ion-button icon-only clear (click)="changeData()">
           <ion-icon name="md-create" *ngIf="isDisabled"></ion-icon>
           <ion-icon name="checkmark" *ngIf="!isDisabled" class="save_icon"></ion-icon>
@@ -24,19 +24,21 @@
  
 
   <ion-list class="profile_form" no-margin>
-
-      <ion-item no-lines no-padding>
-          <ion-label>Phone Number</ion-label>
-          <ion-input id="elemtId" type="tel" value="+358402937266" disabled="{{isDisabled}}"></ion-input>
-      </ion-item>
+  
+  <ion-label class="two">Phone Number</ion-label>
+  <ion-input class="one" type="tel" id="elemtId" value="+358504352906" disabled="{{isDisabled}}"></ion-input>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/js/intlTelInput.js"></script>
+  <script>
+    $("#elemtId").intlTelInput();
+  </script>
+    
+      
       <ion-item no-lines no-padding>
           <ion-label>Email</ion-label>
-          <ion-input type="email" value="JuusoHeimo@student.laurea.fi" disabled="{{isDisabled}}"></ion-input>
+          <ion-input type="email" value="{{user}}" disabled="{{isDisabled}}"></ion-input>
       </ion-item>
-      <ion-item no-lines no-padding>
-          <ion-label>My Location</ion-label>
-          <ion-textarea  value="Vanha maantie 9, FI-02640, Espoo" disabled="{{isDisabled}}"></ion-textarea>
-      </ion-item>
+      
       <ion-item no-lines no-padding>
           <ion-label>Gender</ion-label>
           <ion-input  value="Male" disabled="{{isDisabled}}"></ion-input>
@@ -46,13 +48,13 @@
             <ion-input  value="22" disabled="{{isDisabled}}"></ion-input>
         </ion-item>
         <ion-item no-lines no-padding>
-                <ion-label>Weight</ion-label>
-                <ion-input value="80" disabled="{{isDisabled}}"></ion-input>
-            </ion-item>
-     <ion-item no-lines no-padding>
-             <ion-label>Height</ion-label>
-             <ion-input value="185" disabled="{{isDisabled}}"></ion-input>
-      </ion-item>    
+            <ion-label>Address</ion-label>
+            <ion-textarea  value="Mantelipolku 4, FI-01710, Vantaa" disabled="{{isDisabled}}"></ion-textarea>
+        </ion-item>
+        <ion-item no-lines no-padding>
+                <ion-label>Country</ion-label>
+                <ion-input value="Finland" disabled="{{isDisabled}}"></ion-input>
+            </ion-item>    
 
   </ion-list>
 

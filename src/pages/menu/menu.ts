@@ -1,5 +1,5 @@
 //Juuso Kivisto, 1701442
-//Heimo Kaukonen, 1601560
+
 
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav, App } from 'ionic-angular';
@@ -36,11 +36,13 @@ rootPage="TabsPage";
    // Adding all components which are in the navigation menu
   pages: PageInterface[] = [
     { title: 'Home', pageName: 'TabsPage', tabComponent: 'HomePage', index: 0, icon: 'home'},
-    { title: 'Muscle Groups', pageName: 'AboutPage', tabComponent: 'AboutPage', index: 1, icon: 'podium'},
-    { title: 'Gyms', pageName: 'GymsPage', index: 2, icon: 'map'},
-    { title: 'Your Profile', pageName: 'ProfilePage', index: 3, icon: 'person'},
-    { title: 'Contact us', pageName: 'ContactPage', index: 4, icon: 'contacts'}//,
-    //{ title: 'Curriculum activities', pageName: 'ActivitiesPage', index: 5, icon: 'trophy'}
+    { title: 'Profile', pageName: 'ProfilePage', index: 1, icon: 'person'},
+    { title: 'Targeted CV', pageName: 'TargetedPage', index: 2, icon: 'clipboard'},
+    { title: 'Technical & Soft skills', pageName: 'SkillsPage', tabComponent: 'SkillsPage', index: 3, icon: 'podium'},
+    { title: 'Project Work', pageName: 'ProjectworkPage', index: 4, icon: 'folder'},
+    { title: 'Curriculum Activities', pageName: 'ActivitiesPage', index: 5, icon: 'trophy'},
+    { title: 'Contact us', pageName: 'ContactPage', index: 6, icon: 'contacts'}
+    
     
 
   ]

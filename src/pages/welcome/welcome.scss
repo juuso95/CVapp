@@ -10,32 +10,25 @@ page-welcome {
         background-image: url('../assets/imgs/nature.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: 100%;
     }
     .image1 {
-        background-image: url('../assets/imgs/training2.jpg');
+        background-image: url('../assets/imgs/phone2.jpg');
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: 100%;
     }
-    .image2 {
-        background-image: url('../assets/imgs/gym11.jpg');
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-    .image3 {
-        background-image: url('../assets/imgs/gym0.jpg');
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
+    
+    .logo {
+        display: block;
+        //margin: auto;
+        width: 70%;
+        margin-top: -30px;
+        margin-bottom: -60px;
+        margin-left: 70px;
+        }
 
     .padding {
         padding-bottom: 100px;
